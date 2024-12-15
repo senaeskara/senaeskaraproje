@@ -1,0 +1,255 @@
+/* Genel stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-section {
+    background-color: #ffcc00;
+    padding: 60px 20px;
+    color: #0d6efd;
+}
+
+.intro-heading {
+    font-size: 40px;
+    color: #0056b3;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Slaytların Konteyneri */
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Ekran boyutuna göre ayarlayın */
+    margin: 0 auto;
+    overflow: hidden; /* Slayt dışı içeriklerin görünmesini engeller */
+}
+
+/* Slaytlar */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Her bir Slayt */
+.slide {
+    min-width: 100%; /* Her slaytın tam ekran genişliğini kaplamasını sağlar */
+    transition: opacity 0.5s ease;
+}
+
+.slide img {
+    width: 100%; /* Görselin genişliği container'a uyar */
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Örnek kartları */
+.example-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.example-cards .example {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.example-cards .example:hover {
+    transform: scale(1.05);
+}
+
+.example-cards h3 {
+    color: #0d6efd;
+}
+
+.stat-container {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact form button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+   /* İletişim Formu */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px; /* Sayfanın alt kısmına mesafe ekledik */
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact form button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px; /* Butonun üst kısmında biraz boşluk bırak */
+    align-self: flex-end; /* Butonu sağa hizala */
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
